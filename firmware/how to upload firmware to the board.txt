@@ -1,0 +1,25 @@
+Follow instructions in the website below to install firmware to the minitronics board,
+http://reprap.org/wiki/Minitronics_10
+
+ but don't use the latest version of marlin software,
+
+use the one in this folder instead.
+
+If the last version used from the website, minitronics board is not recognized.
+
+the board is in com4
+
+loaded the .ino file in:
+C:\Granta\reprap\minitronicstest
+
+and connected board fan, x & y stepper mottors.
+
+uploaded the test to the board, and both motors are moving. The fan works.
+
+copied marlin.pde from wrong marlin firmware above to customized working one. The file didn't exist in the right folder
+
+This didn't make any difference.
+
+Had to tweak configuration.h to invert the limits of all axis/endstops.
+
+Had to invert the soldering for endstop cabling, the switches were always on, preventing moving of motors
